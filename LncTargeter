@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+@Date: 2021.10.14
+@Author: Weibo Hou
+@Description: Run LncTarget
+"""
+
+from src import target
+import logging
+
+if __name__ == '__main__':
+
+    # run prediction
+    if not target.run_predict_bs():
+        logging.info('Error occurred')
